@@ -1,8 +1,3 @@
-# SRE Lab Task 2  
-## Task A — Defect Hunt
-
----
-
 # 🔍 Defect Identification
 
 This document identifies defects in the Online Course Registration System requirements.
