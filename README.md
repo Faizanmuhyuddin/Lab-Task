@@ -1,133 +1,133 @@
-🔴 1) INCONSISTENCIES (5)
-1️⃣ Registration Deadline Conflict
+# SRE Lab Task 2  
+## Task A — Defect Hunt
 
-Requirements: R2 & R3
+---
 
-R2: Registration not allowed after deadline.
+# 🔍 Defect Identification
 
-R3: Late registration allowed for 3 days after deadline.
+This document identifies defects in the Online Course Registration System requirements.
 
-❌ These contradict each other.
+---
 
-2️⃣ Seat Availability Conflict
+# 1️⃣ Inconsistencies (5)
 
-Requirements: R4 & R5
+### 1. Registration Deadline Conflict (R2 & R3)
+- R2: Registration is not allowed after the deadline.
+- R3: Late registration is allowed for 3 days after the deadline.
+- Issue: These two requirements contradict each other.
 
-R4: System shows available seats.
+---
 
-R5: Registration allowed even if seats are full.
+### 2. Seat Availability Conflict (R4 & R5)
+- R4: The system shall show available seats.
+- R5: The system shall allow registration even if seats are full.
+- Issue: Registration should not be allowed if seats are full.
 
-❌ Overbooking conflict.
+---
 
-3️⃣ Schedule Conflict Rule
+### 3. Schedule Conflict Rule (R9 & R10)
+- R9: The system shall prevent schedule conflicts.
+- R10: Students may register for two courses at the same time if one is online.
+- Issue: One requirement blocks conflicts while the other allows it.
 
-Requirements: R9 & R10
+---
 
-R9: Prevent schedule conflicts.
+### 4. Credit Hour Limit Conflict (R11 & R12)
+- R11: Students are limited to 18 credit hours.
+- R12: Students may register up to 24 credit hours with advisor approval.
+- Issue: Maximum credit hour limit is unclear.
 
-R10: Allow same-time courses if one is online.
+---
 
-❌ General rule conflicts with exception.
+### 5. Drop Deadline Conflict (R13 & R15)
+- R13: Students may drop courses until Week 6.
+- R15: Course drops are not allowed after the deadline.
+- Issue: The drop deadline is not clearly defined.
 
-4️⃣ Credit Hour Limit Conflict
+---
 
-Requirements: R11 & R12
+# 2️⃣ Incompleteness (5)
 
-R11: Limit = 18 credit hours.
+### 6. Confirmation Method Not Specified (R6)
+- The system shall send confirmation.
+- Issue: Method (email/SMS) and timing are not specified.
 
-R12: Up to 24 with advisor approval.
+---
 
-❌ Maximum credit unclear.
+### 7. Instructor Approval Process Undefined (R8)
+- Issue: Approval process is not described (manual or system-based).
 
-5️⃣ Drop Deadline Conflict
+---
 
-Requirements: R13 & R15
+### 8. Advisor Approval Process Missing (R12)
+- Issue: It is not defined how advisor approval is recorded.
 
-R13: Drop allowed until Week 6.
+---
 
-R15: No drops after deadline.
+### 9. Drop Fee Amount Missing (R14)
+- Issue: The exact fee amount is not specified.
 
-❌ Deadline not clearly defined.
+---
 
-🟡 2) INCOMPLETENESS (5)
-6️⃣ R6 — Confirmation Method Missing
+### 10. Waitlist Details Missing (R16)
+- Issue: Maximum waitlist size and visibility are not defined.
 
-“The system shall send confirmation.”
+---
 
-❌ Not specified:
+# 3️⃣ Ambiguities (3)
 
-Email or SMS?
+### 11. “Register Quickly” (R20)
+- Issue: The term "quickly" is unclear and not measurable.
 
-Immediate or delayed?
+---
 
-7️⃣ R8 — Instructor Approval Process Missing
+### 12. “Send Confirmation” (R6)
+- Issue: It is unclear what type of confirmation is being sent.
 
-❌ Not defined:
+---
 
-How approval is given?
+### 13. “Priority Enrollment” (R19)
+- Issue: The method of giving priority is not clearly explained.
 
-Digital or manual?
+---
 
-8️⃣ R12 — Advisor Approval Process Missing
+# 4️⃣ Unverifiable Requirements (2)
 
-❌ Not defined:
+### 14. Performance Requirement (R20)
+- “Students shall be able to register quickly.”
+- Issue: No measurable performance criteria provided.
 
-When approval is required?
+---
 
-How it is recorded?
+### 15. Confirmation Requirement (R6)
+- “The system shall send confirmation.”
+- Issue: No timing or method defined for verification.
 
-9️⃣ R14 — Drop Fee Amount Missing
+---
 
-❌ Not specified:
+# 5️⃣ Missing Business Rules (Additional Findings)
 
-Exact amount?
+### 16. Maximum Number of Courses Not Defined
+- Only credit hours are defined, not number of courses.
 
-Fixed or percentage?
+---
 
-🔟 R16 — Waitlist Details Missing
+### 17. Late Registration Eligibility Not Defined
+- It is not specified who is allowed late registration.
 
-❌ Not defined:
+---
 
-Maximum waitlist size?
+### 18. Refund Policy Not Defined
+- No rule exists regarding refund after course drop.
 
-Visibility of waitlist position?
+---
 
-🔵 3) AMBIGUITIES (3)
-1️⃣1️⃣ R20 — “Register quickly”
+# ✅ Summary
 
-❌ “Quickly” is unclear.
-Does it mean 2 seconds? 10 seconds?
+- 5 Inconsistencies  
+- 5 Incompleteness  
+- 3 Ambiguities  
+- 2 Unverifiable Requirements  
+- 3 Missing Business Rules  
 
-1️⃣2️⃣ R6 — “Send confirmation”
-
-❌ Confirmation of what?
-Registration? Drop? Waitlist?
-
-1️⃣3️⃣ R19 — “Priority enrollment”
-
-❌ How priority works?
-Reserved seats? Early access?
-
-🟣 4) UNVERIFIABLE REQUIREMENTS (2)
-1️⃣4️⃣ R20 — “Register quickly”
-
-❌ Not measurable.
-No performance criteria defined.
-
-1️⃣5️⃣ R6 — “Send confirmation”
-
-❌ Not testable.
-No time or delivery method defined.
-
-🟤 5) MISSING BUSINESS RULES (Extra)
-1️⃣6️⃣ Missing Rule — Maximum Courses
-
-Number of courses per semester not defined.
-
-1️⃣7️⃣ Missing Rule — Eligibility for Late Registration
-
-Not defined who can late register.
-
-1️⃣8️⃣ Missing Rule — Refund Policy
-
-No refund policy defined for dropped courses.
+Total Defects Identified: 18
