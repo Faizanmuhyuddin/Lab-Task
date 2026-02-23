@@ -1,0 +1,82 @@
+# Task C — Revised Requirements
+
+This section contains corrected and improved requirements to resolve the defects identified in Task A.
+
+---
+
+## 1. Registration Deadline Rule (Revised R2 & R3)
+
+The system shall allow course registration until the official registration deadline.
+Late registration shall be permitted for up to 3 calendar days after the deadline only with administrative approval.
+
+---
+
+## 2. Seat Availability Rule (Revised R4 & R5)
+
+The system shall display the total and available seats for each course.
+If seats are full, the system shall prevent direct registration and provide a waitlist option.
+
+---
+
+## 3. Schedule Conflict Rule (Revised R9 & R10)
+
+The system shall prevent students from registering for courses with overlapping schedules.
+An exception shall apply only if one of the courses is fully online and does not require live attendance.
+
+---
+
+## 4. Credit Hour Limit Rule (Revised R11 & R12)
+
+The system shall limit students to a maximum of 18 credit hours per semester.
+Students may register for up to 24 credit hours only after receiving digital approval from their academic advisor before final submission.
+
+---
+
+## 5. Course Drop Policy (Revised R13 & R15)
+
+The system shall allow students to drop courses until the end of Week 6 of the semester.
+Course drops shall not be permitted after Week 6.
+
+---
+
+## 6. Drop Fee Rule (Revised R14)
+
+The system shall charge a fixed drop fee of $50 for any course dropped after Week 2 and before the end of Week 6.
+
+---
+
+## 7. Confirmation Requirement (Revised R6)
+
+The system shall send an email confirmation to the student within 1 minute after successful registration, waitlisting, or course drop.
+
+---
+
+## 8. Instructor Approval Rule (Revised R8)
+
+The system shall allow prerequisite override only after the instructor submits digital approval through the system portal.
+
+---
+
+## 9. Waitlist Rule (Revised R16–R19)
+
+The system shall maintain a waitlist when course seats are full.
+Waitlisted students shall be automatically enrolled when a seat becomes available.
+Enrollment priority shall follow this order:
+1. Final-year students
+2. Other students based on waitlist joining time (first-come, first-served).
+
+---
+
+## 10. Performance Requirement (Revised R20)
+
+The system shall process course registration requests within 3 seconds under normal operating conditions.
+
+---
+
+# Summary
+
+All revised requirements are:
+- Clear and specific
+- Free from conflicts
+- Measurable and testable
+- Complete with defined rules and processes
