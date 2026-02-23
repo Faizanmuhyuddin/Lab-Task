@@ -1,0 +1,42 @@
+R1
+“The system shall allow students to register for courses.”
+R2
+“The system shall not allow registration after the deadline.”
+R3
+“Late registration is allowed for 3 days after the deadline.”
+R4
+“The system shall show available seats for each course.”
+R5
+“The system shall allow course registration even if seats are full.”
+R6
+“The system shall send confirmation.”
+R7
+“The system shall prevent students from registering if prerequisites are not met.”
+R8
+
+“Prerequisites may be ignored if the instructor approves.”
+R9
+“The system shall prevent schedule conflicts.”
+R10
+“Students may register for two courses occurring at the same time if one is an online course.”
+R11
+“The system shall limit students to 18 credit hours per semester.”
+R12
+“Students may register for up to 24 credit hours with advisor approval.”
+R13
+“The system shall allow students to drop courses until Week 6.”
+R14
+“The system shall charge a fee for dropping courses after Week 2.”
+R15
+“The system shall not allow course drops after the deadline.”
+R16
+“The system shall support wait listing when seats are full.”
+R17
+“Waitlisted students shall automatically be enrolled when a seat becomes available.”
+R18
+“The system shall enroll waitlisted students in the order they joined the waitlist.”
+R19
+“Priority enrollment shall be given to final-year students.”
+
+R20
+“Students shall be able to register quickly.”
